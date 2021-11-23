@@ -26,6 +26,22 @@ import { exercise03Task } from "./main";
  */
 function exercise03() {
   // Complete the code of the function
+  exercise03Task(function(error, result)  {
+
+    var p = document.createElement('p');
+    p.classList.add('exercise-03');
+    if (error) {
+      p.textContent = error.message
+    } else {
+      p.textContent = result;
+    }
+    var container = document.getElementsByClassName('ex-container')
+      Array.from(container).forEach(e => {
+        e.appendChild(p);
+      })
+  });
 }
+
+
 
 export default exercise03;

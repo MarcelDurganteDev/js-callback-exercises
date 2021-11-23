@@ -16,6 +16,15 @@ import { exercise02Task } from "./main";
  */
 function exercise02() {
   // Complete the code of the function
+  exercise02Task(function(result)  {
+    var p = document.createElement('p');
+    p.textContent = result;
+    p.classList.add('exercise-02');
+    var container = document.getElementsByClassName('ex-container')
+      Array.from(container).forEach(e => {
+        e.appendChild(p);
+      })
+  });
 }
 
 export default exercise02;

@@ -8,6 +8,9 @@ import { exercise04Task } from "./main";
  */
 function exercise04() {
   // Complete the code of the function
+  setTimeout(function () {
+    console.log('Hello World')
+  }, 500);
 }
 
 export default exercise04;
